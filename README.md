@@ -55,5 +55,6 @@ Sensors	      |Fingerprint (under display, optical), accelerometer, gyro, proxim
 Colors 	      |Obsidian, Porcelain, Bay, Mint
 Battery       |Li-Ion 5050 mAh, non-removable; 30W wired, PD3.0, PPS, 50% in 30 min (advertised); 23W wireless; Reverse wireless
 
-![images](https://github.com/user-attachments/assets/c2351e33-50cd-491a-b085-dd43019cf0e0)
+![Pixel-8-vs-Pixel-8-Pro-1-980x607](https://github.com/user-attachments/assets/b3e78243-15bc-4096-b1ae-34264d5532d5)
+
 
