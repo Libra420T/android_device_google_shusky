@@ -32,6 +32,7 @@ TARGET_ENABLE_BLUR := true
 
 # Gms 
 WITH_GMS := true
+WITH_GAPPS := true
 
 # Ship Google Camera
 TARGET_PREBUILT_GOOGLE_CAMERA := true
@@ -42,15 +43,21 @@ TARGET_DEFAULT_PIXEL_LAUNCHER := true
 # Ship LawnChair 
 TARGET_PREBUILT_LAWNCHAIR_LAUNCHER := true
 
-RISING_MAINTAINER=EliteDarkKaiser
+EVEREST_BUILDTYPE := OFFICIAL
+LINEAGE_BUILDTYPE := OFFICIAL
+EVEREST_BUILD_TYPE := OFFICIAL
+LINEAGE_BUILD_TYPE := OFFICIAL
+EVEREST_MAINTAINER := Libra420T
+LINEAGE_MAINTAINER := Libra420T
 
 # Boot animation
+TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_SCREEN_HEIGHT := 2992
 TARGET_SCREEN_WIDTH := 1344
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    BuildDesc="husky-user 15 AP3A.241105.007 12470370 release-keys" \
-    BuildFingerprint=google/husky/husky:15/AP3A.241105.007/12470370:user/release-keys \
+    BuildDesc="husky-user 15 AP4A.241205.013 12621605 release-keys" \
+    BuildFingerprint=google/husky/husky:15/AP4A.241205.013/12621605:user/release-keys \
     DeviceProduct=$(DEVICE_CODENAME)
 
 $(call inherit-product, $(VENDOR_PATH)/$(DEVICE_CODENAME)-vendor.mk)
