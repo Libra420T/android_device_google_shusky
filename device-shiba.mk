@@ -17,6 +17,9 @@
 # Restrict the visibility of Android.bp files to improve build analysis time
 $(call inherit-product-if-exists, vendor/google/products/sources_pixel.mk)
 
+TARGET_KERNEL_DIR ?= device/google/5.15/24Q4-12506254
+TARGET_BOARD_KERNEL_HEADERS ?= device/google/5.15/24Q4-12506254/kernel-headers
+
 TARGET_LINUX_KERNEL_VERSION := $(RELEASE_KERNEL_SHIBA_VERSION)
 # Keeps flexibility for kasan and ufs builds
 TARGET_KERNEL_DIR ?= $(RELEASE_KERNEL_SHIBA_DIR)

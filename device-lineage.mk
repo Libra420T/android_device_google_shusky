@@ -19,10 +19,10 @@ PRODUCT_PACKAGES += \
     EuiccSupportPixelOverlay
 
 # Kernel
-TARGET_PREBUILT_KERNEL := device/google/shusky-kernel/Image.lz4
+TARGET_PREBUILT_KERNEL := device/google/5.15/24Q4-12506254/Image.lz4
 
 # Basic Call Recorder
-include vendor/bcr/bcr.mk
+-include vendor/bcr/bcr.mk
 
 # PixelParts
 include packages/apps/PixelParts/device.mk
