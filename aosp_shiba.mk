@@ -20,11 +20,12 @@ USE_SWIFTSHADER := true
 BOARD_USES_SWIFTSHADER := true
 
 $(call inherit-product, device/google/zuma/aosp_common.mk)
+$(call inherit-product, device/google/shusky/aosp_shiba.mk)
 $(call inherit-product, device/google/shusky/shiba_generic.mk)
 
 PRODUCT_NAME := aosp_shiba
 PRODUCT_DEVICE := shiba
-PRODUCT_MODEL := AOSP on shiba
+PRODUCT_MODEL := shiba
 PRODUCT_BRAND := Android
 PRODUCT_MANUFACTURER := Google
 

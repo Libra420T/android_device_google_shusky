@@ -4,15 +4,15 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-$(call inherit-product, $(DEVICE_PATH)/device-lineage.mk)
+$(call inherit-product, $(DEVICE_PATH)/device-custom.mk)
 
-DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/$(DEVICE_CODENAME)/overlay-lineage
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/$(DEVICE_CODENAME)/overlay-custom
 
 PRODUCT_PACKAGES += \
-    PixelDisplayServiceOverlayShiba
+    PixelDisplayServiceOverlayHusky
 
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/$(DEVICE_CODENAME)/vendor.prop
 
 # Init
 PRODUCT_PACKAGES += \
-    init.recovery.shiba.touch.rc
+    init.recovery.husky.touch.rc

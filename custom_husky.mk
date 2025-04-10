@@ -6,22 +6,41 @@
 
 # Inherit some common stuff
 TARGET_DISABLE_EPPE := true
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Inherit device configuration
 DEVICE_CODENAME := husky
 DEVICE_PATH := device/google/shusky
 VENDOR_PATH := vendor/google/husky
-$(call inherit-product, $(DEVICE_PATH)/aosp_$(DEVICE_CODENAME).mk)
-$(call inherit-product, device/google/zuma/lineage_common.mk)
-$(call inherit-product, $(DEVICE_PATH)/$(DEVICE_CODENAME)/device-lineage.mk)
+$(call inherit-product, device/google/zuma/custom_common.mk)
+$(call inherit-product, $(DEVICE_PATH)/$(DEVICE_CODENAME)/device-custom.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_BRAND := google
 PRODUCT_MODEL := Pixel 8 Pro
-PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
+PRODUCT_NAME := aosp_$(DEVICE_CODENAME)
+
+# The-Pixel-Project Build Flags
+CUSTOM_MAINTAINER := Libra420T
+CUSTOM_BUILD_TYPE := UNOFFICIAL
+
+# Call Recorder
+TARGET_CALL_RECORDING_SUPPORTED := true
+
+# Face Unlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
+# GMS
+WITH_GMS := true
+WITH_GAPPS := true
+
+# Aperture
+PRODUCT_NO_CAMERA := true
 
 # Boot animation
+TARGET_BOOT_ANIMATION_RES := 1440
 TARGET_SCREEN_HEIGHT := 2992
 TARGET_SCREEN_WIDTH := 1344
 
