@@ -18,6 +18,9 @@ PRODUCT_COPY_FILES += \
 # IWLAN
 PRODUCT_PACKAGES += \
     Iwlan
+    
+# PixelParts <Evolution-X>
+include packages/apps/PixelParts/device.mk
 
 # PowerShare
 include hardware/google/pixel/powershare/device.mk
