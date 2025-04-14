@@ -26,7 +26,7 @@ include packages/apps/PixelParts/device.mk
 include hardware/google/pixel/powershare/device.mk
 
 # ViPER4AndroidFX
-$(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
+# $(call inherit-product-if-exists, packages/apps/ViPER4AndroidFX/config.mk)
 
 # wireless_charger HAL service
 include device/google/gs-common/wireless_charger/wireless_charger.mk
